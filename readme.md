@@ -6,7 +6,7 @@ using express/mongoose
 
 Still a work in progress
 
-### TODOs:
+### TODOs :
     - [ ] server-side post validations
     - [ ] get post by id expansion
     - [ ] Docker incorporation
