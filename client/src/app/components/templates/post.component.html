@@ -1,0 +1,28 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <h4>Create New Post</h4>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="postForm" class="post">
+            <mat-input-container>
+                <input matInput formControlName="title" type="text" placeholder="title">
+            </mat-input-container>
+            <br />
+            <mat-input-container>
+                <textarea matInput formControlName="content" type="text" placeholder="What do you want to post?">
+                </textarea>
+            </mat-input-container>
+            <br />
+            <div *ngIf="!currentPost._id">
+                <button (click)="onSubmit()" mat-raised-button color="primary">Create Post</button>
+            </div>
+            <div *ngIf="currentPost._id">
+                <button mat-raised-button (click)="onEdit()" color="primary">Edit</button>
+                <button mat-raised-button (click)="reset()" color="danger">Reset Form</button>
+            </div>
+        </form>
+    </mat-card-content>
+</mat-card>
+<br>

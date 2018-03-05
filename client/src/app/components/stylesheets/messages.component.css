@@ -1,0 +1,15 @@
+.card-block {
+  padding: 5px;
+}
+
+h4.card-title, p.card-text {
+  color: white;
+}
+
+.card {
+  background: rgb(27, 27, 53);
+}
+
+hr {
+  background: lightblue;
+}
